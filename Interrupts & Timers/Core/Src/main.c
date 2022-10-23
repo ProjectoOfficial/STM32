@@ -15,6 +15,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -60,8 +61,6 @@ static void MX_TIM11_Init(void);
   * @brief  The application entry point.
   * @retval int
   */
-uint16_t led_time = 0;
-
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -99,24 +98,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	led_time = __HAL_TIM_GET_COUNTER(&htim11);
-	uint16_t timer_val = __HAL_TIM_GET_COUNTER(&htim11);
   while (1)
   {
-		if(__HAL_TIM_GET_COUNTER(&htim11) == (uint16_t)(timer_val + 10000)){
-			HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
-			timer_val = __HAL_TIM_GET_COUNTER(&htim11);
-		}
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
-void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
-	if((htim->Instance == TIM2) && ((__HAL_TIM_GET_COUNTER(&htim11) - led_time) > LED_INTERVAL)){
-		HAL_GPIO_TogglePin(LED2_GPIO_Port,LED2_Pin);
-		led_time = __HAL_TIM_GET_COUNTER(&htim11);
-	}
-	
-}
+
 /**
   * @brief System Clock Configuration
   * @retval None
