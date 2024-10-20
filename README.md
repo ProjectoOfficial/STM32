@@ -22,6 +22,14 @@ Unlock the secrets of I2C (Inter-Integrated Circuit) communication with the BMP2
 ### [PWM Generation](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_PWM)
 Delve into the realm of Pulse Width Modulation (PWM). Understand how PWM signals are generated on STM32 microcontrollers and their applications in control systems.
 
+### [MCP2515 CAN BUS](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_MCP2515)
+Discover our library to use the MCP2515 board on STM32 microcontrollers without CAN Peripherals. This way you can communicate on CAN BUS through any kind of STM32 micro.
+
+
+### [MCP2551 CAN BUS](https://github.com/ProjectoOfficial/STM32/tree/main/MCP2551_L432KC)
+If your STM32 microcontroller has CAN Peripherals, why not using them? This allows to you to save space on your custom design PCBs, and configure the CAN protocol the way you want. Make sure that your STM32 micro directly supports CAN BUS communication.
+
+
 ## Getting Started
 
 Each project has its own detailed README and documentation within its respective folder. Follow the project links above to explore code examples, explanations, and practical demonstrations.
