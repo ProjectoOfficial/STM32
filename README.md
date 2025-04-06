@@ -29,6 +29,8 @@ Discover our library to use the MCP2515 board on STM32 microcontrollers without 
 ### [MCP2551 CAN BUS](https://github.com/ProjectoOfficial/STM32/tree/main/MCP2551_L432KC)
 If your STM32 microcontroller has CAN Peripherals, why not using them? This allows to you to save space on your custom design PCBs, and configure the CAN protocol the way you want. Make sure that your STM32 micro directly supports CAN BUS communication.
 
+### [SD Card SPI](https://github.com/ProjectoOfficial/STM32/tree/main/SDCard)
+Set up an SD Card through SPI to create your own datalogger for your project.
 
 ## Getting Started
 
