@@ -32,6 +32,12 @@ If your STM32 microcontroller has CAN Peripherals, why not using them? This allo
 ### [SD Card SPI](https://github.com/ProjectoOfficial/STM32/tree/main/SDCard)
 Set up an SD Card through SPI to create your own datalogger for your project.
 
+### [STM32 AI Neural Network](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_AI_SinNet)
+Explore the power of AI on STM32 microcontrollers with X-CUBE-AI. This project demonstrates how to train a neural network in Python to approximate the sine function and deploy it on STM32 for real-time inference with performance monitoring.
+
+### [LoRa Communication](https://github.com/ProjectoOfficial/STM32/tree/main/STM32_LoRa_transceivers)
+Implement long-range wireless communication using LoRa modules. Learn how to configure LoRa transceivers, set network parameters, and exchange data between devices over extended distances with low power consumption.
+
 ## Getting Started
 
 Each project has its own detailed README and documentation within its respective folder. Follow the project links above to explore code examples, explanations, and practical demonstrations.

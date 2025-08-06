@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "main",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--train",
+                "--normalize-input",
+                "--quantize",
+                "--export-to-onnx",
+                //"--export-to-tflite",
+                "--visualize-onnx-results",
+
+                "--batch-size", "4096",
+                "--hidden-size", "256",
+                "--learning-rate", "1e-3",
+                "--num-epochs", "50",
+                "--p-dropout", "0.15",
+                "--random-seed", "41",
+                "--num-workers", "10"
+            ]
+        }
+    ]
+}
